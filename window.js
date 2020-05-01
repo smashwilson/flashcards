@@ -1,6 +1,6 @@
-const options = [
-  '10', '9', '8', '7', '6', '5', '4', '3', '2', '1', '0',
-];
+const fs = require("fs");
+
+const options = JSON.parse(fs.readFileSync("./slides.json"));
 
 function randomOption() {
   const ind = Math.floor(Math.random() * options.length);
