@@ -1,0 +1,15 @@
+{
+  "name": "flashcards",
+  "version": "1.0.0",
+  "description": "Electron app to randomly display flashcards",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Ash Wilson <smashwilson@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^8.2.5"
+  }
+}
