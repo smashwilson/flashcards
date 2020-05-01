@@ -13,6 +13,13 @@ window.onload = function() {
   cardElement.innerHTML = randomOption();
 
   document.body.onclick = function () {
-    cardElement.innerHTML = randomOption();
+    const current = cardElement.innerHTML;
+
+    let next = randomOption();
+    while (next === current) {
+      next = randomOption();
+    }
+
+    cardElement.innerHTML = next;
   };
 }
